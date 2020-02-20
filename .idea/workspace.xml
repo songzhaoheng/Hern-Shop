@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57348819-9e63-495b-8e31-30f0832117d5" name="Default Changelist" comment="" />
+    <list default="true" id="57348819-9e63-495b-8e31-30f0832117d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test/SpringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/test/SpringTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +32,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -43,6 +50,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1Y4O8OTALhj7cJlojVFTOF6qM1k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -50,13 +58,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/webapp" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -91,6 +100,7 @@
       <workItem from="1582198242580" duration="814000" />
       <workItem from="1582199080748" duration="7591000" />
       <workItem from="1582206838437" duration="732000" />
+      <workItem from="1582208232685" duration="339000" />
     </task>
     <servers />
   </component>
@@ -126,14 +136,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="723" height="111" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582199057186" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1582199765057">
+    <state x="270" y="0" key="SettingsEditor" timestamp="1582208489495">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582199765057" />
-    <state x="833" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1582206842206">
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582208489495" />
+    <state x="833" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1582208245648">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="833" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582206842206" />
+    <state x="833" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582208245648" />
     <state x="356" y="149" key="new project wizard" timestamp="1582199501204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -142,9 +152,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582206788510" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582201343849">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582208459472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582201343849" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582208459472" />
   </component>
 </project>

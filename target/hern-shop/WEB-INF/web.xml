@@ -57,11 +57,11 @@
   <!--指定错误页面404和500-->
   <error-page>
     <error-code>404</error-code>
-    <location>/webResource/404.jsp</location>
+    <location>/resource/404.jsp</location>
   </error-page>
   <error-page>
     <error-code>500</error-code>
-    <location>/webResource/error.jsp</location>
+    <location>/resource/error.jsp</location>
   </error-page>
 
 </web-app>

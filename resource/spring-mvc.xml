@@ -14,8 +14,10 @@
     <mvc:annotation-driven/>
 
     <!-- 配置访问静态资源文件 -->
-    <mvc:resources location="/webResource/" mapping="/webResource/**" />
+    <mvc:resources location="/resource/" mapping="/resource/**" />
     <mvc:resources location="/upLoad/" mapping="/upLoad/**" />
+
+    <!--配置发送的请求不通过controller直接地跳转到目标页面-->
     <mvc:view-controller path="/" view-name="index" />
 
 

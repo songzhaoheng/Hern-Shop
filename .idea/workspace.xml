@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57348819-9e63-495b-8e31-30f0832117d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test/LombokTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="57348819-9e63-495b-8e31-30f0832117d5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +118,7 @@
       <workItem from="1582198242580" duration="814000" />
       <workItem from="1582199080748" duration="7591000" />
       <workItem from="1582206838437" duration="732000" />
-      <workItem from="1582208232685" duration="594000" />
+      <workItem from="1582208232685" duration="1167000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-package com.phonemarket.entity;
+package com.hern.entity;
 
 public class Cities {
 	private String cityId;

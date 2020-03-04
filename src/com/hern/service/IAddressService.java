@@ -1,13 +1,11 @@
-package com.phonemarket.service;
+package com.hern.service;
+
+import com.hern.entity.Address;
+import com.hern.entity.Areas;
+import com.hern.entity.Cities;
+import com.hern.entity.Provinces;
 
 import java.util.List;
-
-import org.springframework.stereotype.Service;
-
-import com.phonemarket.entity.Address;
-import com.phonemarket.entity.Areas;
-import com.phonemarket.entity.Cities;
-import com.phonemarket.entity.Provinces;
 
 public interface IAddressService {
 	List<Address> findAddressByUserId(Integer userId);

@@ -1,23 +1,16 @@
-package com.phonemarket.controller;
+package com.hern.controller;
 
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
+import com.hern.entity.*;
+import com.hern.service.IAddressService;
+import com.hern.service.IProCityAreaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.phonemarket.entity.Address;
-import com.phonemarket.entity.Areas;
-import com.phonemarket.entity.Cities;
-import com.phonemarket.entity.Provinces;
-import com.phonemarket.entity.Users;
-import com.phonemarket.service.IAddressService;
-import com.phonemarket.service.IProCityAreaService;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 @RequestMapping("/address")

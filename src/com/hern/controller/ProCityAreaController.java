@@ -1,16 +1,15 @@
-package com.phonemarket.controller;
+package com.hern.controller;
 
-import java.util.List;
-
+import com.hern.entity.Areas;
+import com.hern.entity.Cities;
+import com.hern.entity.Provinces;
+import com.hern.service.IProCityAreaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.phonemarket.entity.Areas;
-import com.phonemarket.entity.Cities;
-import com.phonemarket.entity.Provinces;
-import com.phonemarket.service.IProCityAreaService;
+import java.util.List;
 
 @Controller
 @RequestMapping("/proCityArea")

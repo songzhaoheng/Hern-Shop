@@ -1,18 +1,21 @@
-package com.phonemarket.listener;
+package com.hern.listener;
 
-import java.util.List;
+import com.hern.entity.Banner;
+import com.hern.service.IBannerService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
+import java.util.List;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import com.phonemarket.entity.Banner;
-import com.phonemarket.service.IBannerService;
-
+/**
+ * @program: hern-shop
+ * @description: Banner监听启动
+ * @author: 宋兆恒-2336909208@q.com
+ * @create: 2020-02-23 12:18
+ **/
 public class BannerListener implements ServletContextListener {
 
 	@Override

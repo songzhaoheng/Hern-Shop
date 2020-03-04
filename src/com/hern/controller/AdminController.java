@@ -1,20 +1,17 @@
-package com.phonemarket.controller;
+package com.hern.controller;
 
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
+import com.hern.entity.Admins;
+import com.hern.entity.Funs;
+import com.hern.service.IAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.alibaba.druid.pool.DruidDataSource;
-import com.phonemarket.entity.Admins;
-import com.phonemarket.entity.Funs;
-import com.phonemarket.service.IAdminService;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 @Scope("prototype")

@@ -1,4 +1,4 @@
-package com.phonemarket.entity;
+package com.hern.entity;
 
 import java.io.Serializable;
 import java.util.Date;

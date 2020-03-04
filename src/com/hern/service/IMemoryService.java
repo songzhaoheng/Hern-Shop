@@ -1,8 +1,8 @@
-package com.phonemarket.service;
+package com.hern.service;
+
+import com.hern.entity.Memory;
 
 import java.util.List;
-
-import com.phonemarket.entity.Memory;
 
 public interface IMemoryService {
 	List<Memory> finAllMemory();

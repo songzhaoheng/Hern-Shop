@@ -1,10 +1,10 @@
-package com.phonemarket.entity;
+package com.hern.entity;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class Evaluate  implements Serializable{
 	private Integer evaId;

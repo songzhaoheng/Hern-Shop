@@ -1,15 +1,14 @@
-package com.phonemarket.service.impl;
+package com.hern.service.impl;
 
-import java.util.List;
-
+import com.hern.entity.Memory;
+import com.hern.mapper.MemoryMapper;
+import com.hern.service.IMemoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.phonemarket.entity.Memory;
-import com.phonemarket.mapper.MemoryMapper;
-import com.phonemarket.service.IMemoryService;
+import java.util.List;
 
 @Service
 public class MemoryServiceImpl implements IMemoryService {

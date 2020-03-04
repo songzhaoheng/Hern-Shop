@@ -1,21 +1,19 @@
-package com.phonemarket.controller;
+package com.hern.controller;
 
-import java.util.List;
-
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
-
+import com.alibaba.fastjson.JSONObject;
+import com.github.pagehelper.PageInfo;
+import com.hern.entity.Banner;
+import com.hern.entity.GoodsType;
+import com.hern.service.IBannerService;
+import com.hern.service.IGoodsTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Banner;
-import com.phonemarket.entity.GoodsType;
-import com.phonemarket.service.IBannerService;
-import com.phonemarket.service.IGoodsTypeService;
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller
 @RequestMapping("/goodsType")

@@ -1,4 +1,4 @@
-package com.phonemarket.util;
+package com.hern.util;
 
 public class FileUtil {
 

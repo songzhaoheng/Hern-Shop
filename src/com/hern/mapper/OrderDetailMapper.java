@@ -1,10 +1,9 @@
-package com.phonemarket.mapper;
+package com.hern.mapper;
 
-import java.util.List;
-
+import com.hern.entity.OrderDetail;
 import org.springframework.stereotype.Repository;
 
-import com.phonemarket.entity.OrderDetail;
+import java.util.List;
 
 @Repository
 public interface OrderDetailMapper {

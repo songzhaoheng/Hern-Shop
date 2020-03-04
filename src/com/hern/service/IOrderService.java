@@ -1,11 +1,11 @@
-package com.phonemarket.service;
-
-import java.util.List;
+package com.hern.service;
 
 import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Order;
-import com.phonemarket.util.OrderSearchVO;
-import com.phonemarket.util.OrderVO;
+import com.hern.entity.Order;
+import com.hern.util.OrderSearchVO;
+import com.hern.util.OrderVO;
+
+import java.util.List;
 
 public interface IOrderService {
 	Order takeOrder(Order order);

@@ -1,4 +1,4 @@
-package com.phonemarket.util;
+package com.hern.util;
 
 import java.io.FileWriter;
 import java.io.IOException;

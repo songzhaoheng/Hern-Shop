@@ -1,24 +1,22 @@
-package com.phonemarket.controller;
+package com.hern.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
+import com.hern.entity.Address;
+import com.hern.entity.Cart;
+import com.hern.entity.Goods;
+import com.hern.entity.Users;
+import com.hern.service.IAddressService;
+import com.hern.service.ICartService;
+import com.hern.service.IGoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.phonemarket.entity.Address;
-import com.phonemarket.entity.Cart;
-import com.phonemarket.entity.Goods;
-import com.phonemarket.entity.Users;
-import com.phonemarket.service.IAddressService;
-import com.phonemarket.service.ICartService;
-import com.phonemarket.service.IGoodsService;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @RequestMapping("/cart")

@@ -1,6 +1,6 @@
-package com.phonemarket.service;
+package com.hern.service;
 
-import com.phonemarket.entity.Admins;
+import com.hern.entity.Admins;
 
 public interface IAdminService {
 	Admins login(String name, String pass);

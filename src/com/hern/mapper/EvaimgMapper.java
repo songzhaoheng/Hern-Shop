@@ -1,10 +1,9 @@
-package com.phonemarket.mapper;
+package com.hern.mapper;
 
-import java.util.List;
-
+import com.hern.entity.Evaimg;
 import org.springframework.stereotype.Repository;
 
-import com.phonemarket.entity.Evaimg;
+import java.util.List;
 
 @Repository
 public interface EvaimgMapper {

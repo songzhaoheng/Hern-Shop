@@ -1,13 +1,16 @@
-package com.phonemarket.controller;
+package com.hern.controller;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Date;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
+import com.alibaba.fastjson.JSONObject;
+import com.github.pagehelper.PageInfo;
+import com.hern.entity.Evaluate;
+import com.hern.entity.Order;
+import com.hern.entity.OrderDetail;
+import com.hern.entity.Users;
+import com.hern.service.IEvaluateService;
+import com.hern.service.IGoodsService;
+import com.hern.service.IOrderService;
+import com.hern.service.IRedisEvaluateService;
+import com.hern.util.UUIDUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,22 +19,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Evaluate;
-import com.phonemarket.entity.Goods;
-import com.phonemarket.entity.Order;
-import com.phonemarket.entity.OrderDetail;
-import com.phonemarket.entity.Users;
-import com.phonemarket.service.IEvaluateService;
-import com.phonemarket.service.IGoodsService;
-import com.phonemarket.service.IOrderService;
-import com.phonemarket.service.IRedisEvaluateService;
-import com.phonemarket.util.UUIDUtil;
-
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
+import java.util.List;
 
 @Controller
 @RequestMapping("/evaluate")

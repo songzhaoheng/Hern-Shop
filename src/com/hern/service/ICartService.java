@@ -1,8 +1,8 @@
-package com.phonemarket.service;
+package com.hern.service;
+
+import com.hern.entity.Cart;
 
 import java.util.List;
-
-import com.phonemarket.entity.Cart;
 
 public interface ICartService {
 	Integer addGoodsToCart(Cart cart);

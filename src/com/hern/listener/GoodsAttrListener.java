@@ -1,27 +1,30 @@
-package com.phonemarket.listener;
+package com.hern.listener;
 
-import java.util.List;
+import com.alibaba.fastjson.JSON;
+import com.hern.entity.Evaluate;
+import com.hern.entity.Goods;
+import com.hern.entity.GoodsType;
+import com.hern.entity.Memory;
+import com.hern.service.IEvaluateService;
+import com.hern.service.IGoodsService;
+import com.hern.service.IGoodsTypeService;
+import com.hern.service.IMemoryService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import java.util.List;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import com.alibaba.fastjson.JSON;
-import com.phonemarket.entity.Evaluate;
-import com.phonemarket.entity.Goods;
-import com.phonemarket.entity.GoodsType;
-import com.phonemarket.entity.Memory;
-import com.phonemarket.service.IEvaluateService;
-import com.phonemarket.service.IGoodsService;
-import com.phonemarket.service.IGoodsTypeService;
-import com.phonemarket.service.IMemoryService;
-
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
-
+/**
+ * @program: hern-shop
+ * @description: 物品监听
+ * @author: 宋兆恒-2336909208@q.com
+ * @create: 2020-02-22 20:18
+ **/
 public class GoodsAttrListener implements ServletContextListener {
 
 	@Override

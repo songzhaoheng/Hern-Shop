@@ -1,18 +1,17 @@
-package com.phonemarket.service.impl;
+package com.hern.service.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.hern.entity.Banner;
+import com.hern.mapper.BannerMapper;
+import com.hern.service.IBannerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Banner;
-import com.phonemarket.mapper.BannerMapper;
-import com.phonemarket.service.IBannerService;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class BannerServiceImpl implements IBannerService {

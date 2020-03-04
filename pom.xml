@@ -58,12 +58,16 @@
     <jackson.version>2.10.2</jackson.version>
     <!--Fastjson-->
     <fastjson.version>1.2.62</fastjson.version>
-    <!--JSTL-->
+    <!--JavaEE组件-->
     <jstl.version>1.2</jstl.version>
+    <standard.version>1.1.2</standard.version>
+    <javaee-api.version>6.0</javaee-api.version>
     <!--Quartz-->
     <quartz.version>2.3.2</quartz.version>
     <!--Jsqlparser-->
     <jsqlparser.version>3.1</jsqlparser.version>
+    <!--Jedis-->
+    <jedis.version>3.1.0</jedis.version>
     <!--日志组件-->
     <log4j-core.version>2.12.1</log4j-core.version>
     <slf4j.version>1.7.30</slf4j.version>
@@ -323,12 +327,25 @@
       <version>${fastjson.version}</version>
     </dependency>
 
-    <!--JSTL-->
+    <!--Java EE组件-->
     <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
     <dependency>
       <groupId>javax.servlet.jsp.jstl</groupId>
       <artifactId>jstl</artifactId>
       <version>${jstl.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>${javaee-api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/taglibs/standard -->
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>${standard.version}</version>
     </dependency>
 
     <!--Quartz-->
@@ -345,6 +362,14 @@
       <groupId>com.github.jsqlparser</groupId>
       <artifactId>jsqlparser</artifactId>
       <version>${jsqlparser.version}</version>
+    </dependency>
+
+    <!--Jedis-->
+    <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>${jedis.version}</version>
     </dependency>
 
     <!--日志组件-->

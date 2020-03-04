@@ -1,11 +1,10 @@
-package com.phonemarket.mapper;
+package com.hern.mapper;
+
+import com.hern.entity.Guess;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
-
-import org.springframework.stereotype.Repository;
-
-import com.phonemarket.entity.Guess;
 
 @Repository
 public interface GuessMapper {

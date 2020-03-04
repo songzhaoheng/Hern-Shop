@@ -1,9 +1,9 @@
-package com.phonemarket.service;
-
-import java.util.List;
+package com.hern.service;
 
 import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Banner;
+import com.hern.entity.Banner;
+
+import java.util.List;
 
 public interface IBannerService {
 	PageInfo<Banner> findAllBannerBySplitePage(Integer page, Integer limit, String keyword);

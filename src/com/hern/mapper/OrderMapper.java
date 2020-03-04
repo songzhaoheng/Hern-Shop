@@ -1,13 +1,11 @@
-package com.phonemarket.mapper;
+package com.hern.mapper;
 
-import java.util.List;
-import java.util.Map;
-
+import com.hern.entity.Order;
+import com.hern.util.OrderSearchVO;
+import com.hern.util.OrderVO;
 import org.springframework.stereotype.Repository;
 
-import com.phonemarket.entity.Order;
-import com.phonemarket.util.OrderSearchVO;
-import com.phonemarket.util.OrderVO;
+import java.util.List;
 
 @Repository
 public interface OrderMapper {

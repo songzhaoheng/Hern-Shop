@@ -1,25 +1,19 @@
-package com.phonemarket.service.impl;
+package com.hern.service.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.hern.entity.Evaimg;
+import com.hern.entity.Evaluate;
+import com.hern.mapper.EvaimgMapper;
+import com.hern.mapper.EvaluateMapper;
+import com.hern.service.IEvaluateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Evaimg;
-import com.phonemarket.entity.Evaluate;
-import com.phonemarket.entity.Goods;
-import com.phonemarket.mapper.EvaimgMapper;
-import com.phonemarket.mapper.EvaluateMapper;
-import com.phonemarket.service.IEvaluateService;
-import com.phonemarket.util.PageValue;
-
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class EvaluateServiceImpl implements IEvaluateService {

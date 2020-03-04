@@ -1,12 +1,10 @@
-package com.phonemarket.controller;
+package com.hern.controller;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.swing.text.html.FormSubmitEvent.MethodType;
-
+import com.alibaba.fastjson.JSONObject;
+import com.github.pagehelper.PageInfo;
+import com.hern.entity.Banner;
+import com.hern.service.IBannerService;
+import com.hern.util.UUIDUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,11 +13,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Banner;
-import com.phonemarket.service.IBannerService;
-import com.phonemarket.util.UUIDUtil;
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
 
 @Controller
 @RequestMapping("/banner")

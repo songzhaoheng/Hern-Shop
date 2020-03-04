@@ -1,19 +1,16 @@
-package com.phonemarket.service.impl;
+package com.hern.service.impl;
 
-import java.util.List;
-
+import com.hern.entity.Evaluate;
+import com.hern.entity.Goods;
+import com.hern.service.IEvaluateService;
+import com.hern.service.IGoodsService;
+import com.hern.service.IRedisEvaluateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.alibaba.fastjson.JSON;
-import com.phonemarket.entity.Evaluate;
-import com.phonemarket.entity.Goods;
-import com.phonemarket.service.IEvaluateService;
-import com.phonemarket.service.IGoodsService;
-import com.phonemarket.service.IRedisEvaluateService;
-
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+
+import java.util.List;
 
 @Service
 public class RedisEvaluateServiceImpl implements IRedisEvaluateService {

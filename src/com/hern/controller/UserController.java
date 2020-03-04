@@ -1,12 +1,11 @@
-package com.phonemarket.controller;
+package com.hern.controller;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
+import com.alibaba.fastjson.JSONObject;
+import com.github.pagehelper.PageInfo;
+import com.hern.entity.Users;
+import com.hern.service.IUserService;
+import com.hern.util.MD5Utils;
+import com.hern.util.UUIDUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,18 +15,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Cart;
-import com.phonemarket.entity.Users;
-import com.phonemarket.service.ICartService;
-import com.phonemarket.service.IUserService;
-import com.phonemarket.util.MD5Utils;
-import com.phonemarket.util.RedisUtil;
-import com.phonemarket.util.UUIDUtil;
-
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
 
 @Controller
 @RequestMapping("/user")

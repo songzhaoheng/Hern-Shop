@@ -1,12 +1,15 @@
-package com.phonemarket.controller;
+package com.hern.controller;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
+import com.alibaba.fastjson.JSONObject;
+import com.github.pagehelper.PageInfo;
+import com.hern.entity.Evaluate;
+import com.hern.entity.Goods;
+import com.hern.entity.Guess;
+import com.hern.entity.Users;
+import com.hern.service.IEvaluateService;
+import com.hern.service.IGoodsService;
+import com.hern.service.IGuessService;
+import com.hern.util.UUIDUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,17 +20,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Evaluate;
-import com.phonemarket.entity.Goods;
-import com.phonemarket.entity.Guess;
-import com.phonemarket.entity.Users;
-import com.phonemarket.service.IEvaluateService;
-import com.phonemarket.service.IGoodsService;
-import com.phonemarket.service.IGuessService;
-import com.phonemarket.service.impl.CartServiceImpl;
-import com.phonemarket.util.UUIDUtil;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
 
 @Controller
 @RequestMapping("/goods")

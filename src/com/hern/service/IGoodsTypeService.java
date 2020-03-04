@@ -1,9 +1,9 @@
-package com.phonemarket.service;
-
-import java.util.List;
+package com.hern.service;
 
 import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.GoodsType;
+import com.hern.entity.GoodsType;
+
+import java.util.List;
 
 public interface IGoodsTypeService {
 	List<GoodsType> findAllType();

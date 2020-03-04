@@ -1,55 +1,30 @@
-package com.phonemarket.controller;
+package com.hern.controller;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
+import com.alibaba.fastjson.JSONObject;
+import com.alipay.api.AlipayApiException;
+import com.alipay.api.AlipayClient;
+import com.alipay.api.DefaultAlipayClient;
+import com.alipay.api.internal.util.AlipaySignature;
+import com.alipay.api.request.AlipayTradePagePayRequest;
+import com.github.pagehelper.PageInfo;
+import com.hern.entity.*;
+import com.hern.service.*;
+import com.hern.util.AlipayConfig;
+import com.hern.util.OrderSearchVO;
+import com.hern.util.OrderVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.serializer.SerializeConfig;
-import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.alipay.api.AlipayApiException;
-import com.alipay.api.AlipayClient;
-import com.alipay.api.DefaultAlipayClient;
-import com.alipay.api.internal.util.AlipaySignature;
-import com.alipay.api.request.AlipayTradePagePayRequest;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Address;
-import com.phonemarket.entity.Cart;
-import com.phonemarket.entity.Goods;
-import com.phonemarket.entity.Guess;
-import com.phonemarket.entity.Order;
-import com.phonemarket.entity.OrderDetail;
-import com.phonemarket.entity.Users;
-import com.phonemarket.service.IAddressService;
-import com.phonemarket.service.ICartService;
-import com.phonemarket.service.IGoodsService;
-import com.phonemarket.service.IGuessService;
-import com.phonemarket.service.IOrderService;
-import com.phonemarket.util.AlipayConfig;
-import com.phonemarket.util.OrderSearchVO;
-import com.phonemarket.util.OrderVO;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.util.*;
 
 @Controller
 @RequestMapping("/order")

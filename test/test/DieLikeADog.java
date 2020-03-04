@@ -7,4 +7,18 @@ package test;
  * @create: 2020-02-25 21:50
  **/
 public class DieLikeADog {
+
+    private static int i = 1;
+
+    public static void main(String[] argv){
+        for(;;){
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println(i);
+                    i++;
+                }
+            }).start();
+        }
+    }
 }

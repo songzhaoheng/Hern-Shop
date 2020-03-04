@@ -1,10 +1,9 @@
-package com.phonemarket.mapper;
+package com.hern.mapper;
 
-import java.util.List;
-
+import com.hern.entity.Evaluate;
 import org.springframework.stereotype.Repository;
 
-import com.phonemarket.entity.Evaluate;
+import java.util.List;
 
 @Repository
 public interface EvaluateMapper {

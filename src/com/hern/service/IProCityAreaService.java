@@ -1,10 +1,10 @@
-package com.phonemarket.service;
+package com.hern.service;
+
+import com.hern.entity.Areas;
+import com.hern.entity.Cities;
+import com.hern.entity.Provinces;
 
 import java.util.List;
-
-import com.phonemarket.entity.Areas;
-import com.phonemarket.entity.Cities;
-import com.phonemarket.entity.Provinces;
 
 public interface IProCityAreaService {
 	List<Provinces> findAllProvinces();

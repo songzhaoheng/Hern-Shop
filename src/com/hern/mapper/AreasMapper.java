@@ -1,10 +1,9 @@
-package com.phonemarket.mapper;
+package com.hern.mapper;
 
-import java.util.List;
-
+import com.hern.entity.Areas;
 import org.springframework.stereotype.Repository;
 
-import com.phonemarket.entity.Areas;
+import java.util.List;
 
 @Repository
 public interface AreasMapper {

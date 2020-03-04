@@ -1,25 +1,22 @@
-package com.phonemarket.service.impl;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
+package com.hern.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Evaluate;
-import com.phonemarket.entity.Goods;
-import com.phonemarket.mapper.EvaluateMapper;
-import com.phonemarket.mapper.GoodsMapper;
-import com.phonemarket.service.IEvaluateService;
-import com.phonemarket.service.IGoodsService;
-
+import com.hern.entity.Evaluate;
+import com.hern.entity.Goods;
+import com.hern.mapper.GoodsMapper;
+import com.hern.service.IEvaluateService;
+import com.hern.service.IGoodsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class GoodsServiceImpl implements IGoodsService {

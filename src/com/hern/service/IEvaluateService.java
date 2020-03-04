@@ -1,9 +1,9 @@
-package com.phonemarket.service;
-
-import java.util.List;
+package com.hern.service;
 
 import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Evaluate;
+import com.hern.entity.Evaluate;
+
+import java.util.List;
 
 public interface IEvaluateService {
 	Integer addEvaluate(Evaluate eva, String[] imgs);

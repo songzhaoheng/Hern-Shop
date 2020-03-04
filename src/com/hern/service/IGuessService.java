@@ -1,9 +1,9 @@
-package com.phonemarket.service;
+package com.hern.service;
+
+import com.hern.entity.Guess;
 
 import java.util.List;
 import java.util.Map;
-
-import com.phonemarket.entity.Guess;
 
 public interface IGuessService {
 	List<Guess> findGuessGoodsByUserId(Integer userId, Integer num);

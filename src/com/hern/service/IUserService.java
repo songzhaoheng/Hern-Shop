@@ -1,7 +1,7 @@
-package com.phonemarket.service;
+package com.hern.service;
 
 import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Users;
+import com.hern.entity.Users;
 
 public interface IUserService {
 	Users login(String userName, String userPass);

@@ -1,11 +1,9 @@
-package com.phonemarket.mapper;
+package com.hern.mapper;
 
-import java.util.List;
-
+import com.hern.entity.Provinces;
 import org.springframework.stereotype.Repository;
 
-import com.phonemarket.entity.Address;
-import com.phonemarket.entity.Provinces;
+import java.util.List;
 
 @Repository
 public interface ProvincesMapper {

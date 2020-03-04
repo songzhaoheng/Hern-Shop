@@ -1,10 +1,9 @@
-package com.phonemarket.mapper;
+package com.hern.mapper;
 
-import java.util.List;
-
+import com.hern.entity.Cart;
 import org.springframework.stereotype.Repository;
 
-import com.phonemarket.entity.Cart;
+import java.util.List;
 
 @Repository
 public interface CartMapper {

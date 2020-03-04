@@ -1,10 +1,9 @@
-package com.phonemarket.mapper;
+package com.hern.mapper;
 
-import java.util.List;
-
+import com.hern.entity.GoodsType;
 import org.springframework.stereotype.Repository;
 
-import com.phonemarket.entity.GoodsType;
+import java.util.List;
 
 @Repository
 public interface GoodsTypeMapper {

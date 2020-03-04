@@ -1,20 +1,19 @@
-package com.phonemarket.service.impl;
+package com.hern.service.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.hern.entity.Goods;
+import com.hern.entity.GoodsType;
+import com.hern.mapper.GoodsMapper;
+import com.hern.mapper.GoodsTypeMapper;
+import com.hern.service.IGoodsTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.phonemarket.entity.Goods;
-import com.phonemarket.entity.GoodsType;
-import com.phonemarket.mapper.GoodsMapper;
-import com.phonemarket.mapper.GoodsTypeMapper;
-import com.phonemarket.service.IGoodsTypeService;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class GoodsTypeServiceImpl implements IGoodsTypeService {

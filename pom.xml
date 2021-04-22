@@ -35,7 +35,7 @@
     <druid.version>1.1.21</druid.version>
     <!--MyBatis框架-->
     <!--包括：mybatis、mybatis-spring、mybatis-generator-core、mybatis-paginator-->
-    <mybatis.version>3.5.4</mybatis.version>
+    <mybatis.version>3.5.6</mybatis.version>
     <mybatis-spring.version>2.0.3</mybatis-spring.version>
     <mybatis-paginator.version>1.2.15</mybatis-paginator.version>
     <mybatis-generator-core.version>1.4.0</mybatis-generator-core.version>

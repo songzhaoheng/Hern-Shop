@@ -69,7 +69,7 @@
     <!--Jedis-->
     <jedis.version>3.1.0</jedis.version>
     <!--日志组件-->
-    <log4j-core.version>2.12.1</log4j-core.version>
+    <log4j-core.version>2.16.0</log4j-core.version>
     <slf4j.version>1.7.30</slf4j.version>
     <!--Lombok-->
     <lombok.version>1.18.12</lombok.version>

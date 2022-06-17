@@ -57,7 +57,7 @@
     <!--Jackson组件-->
     <jackson.version>2.10.2</jackson.version>
     <!--Fastjson-->
-    <fastjson.version>1.2.62</fastjson.version>
+    <fastjson.version>1.2.83</fastjson.version>
     <!--JavaEE组件-->
     <jstl.version>1.2</jstl.version>
     <standard.version>1.1.2</standard.version>

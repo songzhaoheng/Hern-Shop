@@ -30,7 +30,7 @@
     <!--包含：core、context、aop、aspects、beans、context-support、expression、jdbc、jms、messaging、tx、test、web、web mvc、-->
     <spring.version>5.2.3.RELEASE</spring.version>
     <!--MySql连接-->
-    <mysql.version>8.0.17</mysql.version>
+    <mysql.version>8.0.28</mysql.version>
     <!--Druid数据库连接池-->
     <druid.version>1.1.21</druid.version>
     <!--MyBatis框架-->

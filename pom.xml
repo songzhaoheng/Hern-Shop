@@ -28,7 +28,7 @@
     <aspectjweaver.version>1.8.7</aspectjweaver.version>
     <!--Spring框架-->
     <!--包含：core、context、aop、aspects、beans、context-support、expression、jdbc、jms、messaging、tx、test、web、web mvc、-->
-    <spring.version>5.2.3.RELEASE</spring.version>
+    <spring.version>5.2.21.RELEASE</spring.version>
     <!--MySql连接-->
     <mysql.version>8.0.17</mysql.version>
     <!--Druid数据库连接池-->
